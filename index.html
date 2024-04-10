@@ -16,6 +16,10 @@
                         clifford: '#da373d',
                         'btn-border-green': 'rgba(29, 209, 0, 0.4)',
                         'btn-bg-green': 'rgba(29, 209, 0, 0.1)',
+                        'ticket-one': 'rgb(255, 191, 15);',
+                        'ticket-two': 'rgb(247, 140, 156)',
+                        'coupon-trans-font': 'rgba(3, 7, 18, 0.5)',
+
                     }
                 }
             }
@@ -24,7 +28,7 @@
 
 </head>
 
-<body class="lg:container lg:mx-auto">
+<body class="lg:container lg:mx-auto"><!--  lg:container lg:mx-auto -->
     <header>
         <nav>
             <div class="navbar bg-base-100">
@@ -61,8 +65,9 @@
                 </div>
             </div>
         </nav>
-        <div class="flex flex-col justify-center items-center relative">
-            <div class="bg-[url('images/banner.png')] w-[1171px] h-[550px] flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center">
+            <div
+                class=" image-container bg-[url('images/banner.png')] bg-no-repeat bg-cover bg-center w-full h-[100vh] flex flex-col justify-center items-center rounded-2xl">
                 <p class="text-white text-[64px] font-extrabold">End to End Travel With</p>
                 <p class="text-green-500 text-[64px] font-extrabold">P Paribahan</p>
                 <p class="text-white text-center text-lg w-[690px]">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -75,7 +80,7 @@
                 <button class="btn btn-success h-16 w-44 text-xl font-bold text-white">Success</button>
 
             </div>
-            <div class="flex gap-6 absolute top-[500px]">
+            <div class="flex gap-6  relative top-[-70px]">
                 <div
                     class="card card-side bg-base-100 shadow-xl w-80 h-36 flex justify-center items-center border-b-4 border-green-500">
                     <figure><img src="images/people.png" alt="Movie" /></figure>
@@ -104,7 +109,54 @@
         </div>
 
     </header>
-    <main>
+    <main class="">
+        <div class="flex flex-col items-center gap-16">
+            <div class="flex gap-6 w-full">
+                <div class="w-full">
+                    <div class="flex bg-ticket-one justify-center items-center rounded-3xl">
+                        <div>
+                            <p class="font-black text-4xl">15% Off</p>
+                            <p class="font-semibold text-xl">on your next purchase</p>
+                            <p class="font-medium text-lg text-coupon-trans-font">use by January 14</p>
+
+                        </div>
+                        <div>
+                            <img src="images/cupon-devider.png" alt="">
+
+                        </div>
+                        <div>
+                            <p class="font-bold text-3xl">NEW15</p>
+                            <p class="font-medium text-xl text-coupon-trans-font">Coupon Code</p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w-full">
+                    <div class="flex bg-ticket-two justify-center items-center rounded-3xl">
+                        <div>
+                            <p class="font-black text-4xl">15% Off</p>
+                            <p class="font-semibold text-xl">on your next purchase</p>
+                            <p class="font-medium text-lg text-coupon-third-font">use by January 14</p>
+
+                        </div>
+                        <div>
+                            <img src="images/cupon-devider.png" alt="">
+
+                        </div>
+                        <div>
+                            <p class="font-bold text-3xl">NEW15</p>
+                            <p class="font-medium text-xl text-coupon-trans-font">Coupon Code</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-outline btn-success px-8 py-5">See all offers</button>
+        </div>
+
 
     </main>
     <footer>
