@@ -20,6 +20,7 @@
                         'ticket-two': 'rgb(247, 140, 156)',
                         'coupon-trans-font': 'rgba(3, 7, 18, 0.5)',
                         'route-ticket': 'rgb(247, 248, 248)',
+                        'custom-green': 'rgb(29, 209, 0)',
 
 
                     }
@@ -31,6 +32,11 @@
         .bus-tickets button {
             height: 56px;
             width: 110px;
+        }
+
+        hr {
+            border-top: dotted 1px;
+
         }
     </style>
 
@@ -51,20 +57,20 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li><a>Item 2</a></li>
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 4</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
                         </ul>
                     </div>
                     <a class="btn btn-ghost text-4xl font-extrabold">P-ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
-                        <li><a>Item 3</a></li>
-                        <li><a>Item 4</a></li>
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
@@ -85,7 +91,8 @@
                     rem
                     eligendi, amet laboriosam
                     ullam quod, assumenda nihil nobis in quam!</p>
-                <button class="btn btn-success h-16 w-44 text-xl font-bold text-white">Success</button>
+                <button id="smoothScroll"
+                    class="btn btn-success h-16 w-44 text-xl font-bold text-white">Success</button>
 
             </div>
             <div class="flex gap-6  relative top-[-70px]">
@@ -93,13 +100,13 @@
                     class="card card-side bg-base-100 shadow-xl w-80 h-36 flex justify-center items-center border-b-4 border-green-500">
                     <figure><img src="images/people.png" alt="Movie" /></figure>
                     <div class="card-body flex-initial">
-                        <p class="card-title font-bold text-4xl">1.7 Lacks</p>
-                        <p>Tickets Sold</p>
+                        <p class="card-title font-bold text-4xl">500K+</p>
+                        <p>Registered Users</p>
                     </div>
                 </div>
                 <div
                     class="card card-side bg-base-100 shadow-xl w-80 h-36 flex justify-center items-center border-b-4 border-green-500">
-                    <figure><img src="images/people.png" alt="Movie" /></figure>
+                    <figure><img src="images/ticket-cupon.png" alt="Movie" /></figure>
                     <div class="card-body flex-initial">
                         <p class="card-title font-bold text-4xl">1.7 Lacks</p>
                         <p>Tickets Sold</p>
@@ -107,17 +114,17 @@
                 </div>
                 <div
                     class="card card-side bg-base-100 shadow-xl w-80 h-36 flex justify-center items-center border-b-4 border-green-500">
-                    <figure><img src="images/people.png" alt="Movie" /></figure>
+                    <figure><img src="images/stoppage.png" alt="Movie" /></figure>
                     <div class="card-body flex-initial">
-                        <p class="card-title font-bold text-4xl">1.7 Lacks</p>
-                        <p>Tickets Sold</p>
+                        <p class="card-title font-bold text-4xl">80k+</p>
+                        <p>Rental Partners</p>
                     </div>
                 </div>
             </div>
         </div>
 
     </header>
-    <main class="">
+    <main class=" mb-28">
         <div class="flex flex-col items-center gap-16">
             <div class="flex gap-6 w-full">
                 <div class="w-full">
@@ -143,9 +150,9 @@
                 <div class="w-full">
                     <div class="flex bg-ticket-two justify-around items-center rounded-3xl">
                         <div>
-                            <p class="font-black text-4xl">15% Off</p>
+                            <p class="font-black text-4xl">20% Off</p>
                             <p class="font-semibold text-xl">on your next purchase</p>
-                            <p class="font-medium text-lg text-coupon-third-font">use by January 14</p>
+                            <p class="font-medium text-lg text-coupon-trans-font">use by January 14</p>
 
                         </div>
                         <div>
@@ -153,7 +160,7 @@
 
                         </div>
                         <div>
-                            <p class="font-bold text-3xl">NEW15</p>
+                            <p class="font-bold text-3xl">Couple 20</p>
                             <p class="font-medium text-xl text-coupon-trans-font">Coupon Code</p>
 
                         </div>
@@ -166,24 +173,26 @@
         </div>
         <div class="border-t-2 border-green-500 rounded-t-[88px] px-32 bg-route-ticket">
 
-            <div class="flex flex-col text-center">
+            <div class="flex flex-col text-center gap-6 mt-28 justify-center items-center">
                 <h1 class="font-bold text-4xl">P.H Paribahan</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, deserunt officia. Aspernatur velit
-                    mollitia rerum exercitationem adipisci culpa provident non.</p>
+                <p class="w-2/4">Yes, you can run unit tests and view the results directly within the app.
+                    The
+                    integrated testing features allow for a streamlined .</p>
             </div>
-            <div class="flex text-center justify-center bg-white">
-                <div class="w-full">
+            <div class="flex bg-white gap-6 justify-center items-center">
+                <div class="w-2/3 mt-8">
                     <div>
                         <div class="flex justify-between">
-                            <div class="flex">
+                            <div class="flex gap-3 pb-6">
                                 <img src="./images/bus-logo.png" alt="">
                                 <div>
-                                    <h1>Greenline Paribahan</h1>
+                                    <h1 class="font-bold text-3xl">Greenline Paribahan</h1>
                                     <p>Coach-009-WEB|AC_Business</p>
                                 </div>
                             </div>
                             <div>
-                                <a class="btn border-btn-border-green bg-btn-bg-green"><span
+                                <a
+                                    class="btn border-btn-border-green bg-btn-bg-green text-lg font-medium text-btn-border-green"><span
                                         id="seat-number">40</span>Seats Left
                                     <span><img src="images/bus-icon.png" alt=""></span>
                                 </a>
@@ -191,95 +200,105 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bg-route-ticket">
+                    <div class="bg-route-ticket rounded-3xl">
                         <div class="flex justify-between">
-                            <p>Route</p>
-                            <p>Dhaka-Sylhet</p>
+                            <p class="p-8 font-semibold text-lg">Route</p>
+                            <p class="p-8 font-semibold text-lg">Dhaka-Sylhet</p>
 
                         </div>
                         <hr>
 
                         <div class="flex justify-between">
-                            <p>Departure Time</p>
-                            <p>9:00 PM</p>
+                            <p class="p-8 font-semibold text-lg">Departure Time</p>
+                            <p class="p-8 font-semibold text-lg">9:00 PM</p>
 
                         </div>
                         <hr>
-                        <div class="flex justify-around">
-                            <button class="btn btn-neutral">Neutral</button>
-                            <button class="btn btn-neutral">Neutral</button>
-                            <button class="btn btn-neutral">Neutral</button>
+                        <div class="grid grid-cols-3 gap-6 mt-6 pb-8 px-8">
+                            <button class="btn">Boarding Point - Laxmipur</button>
+                            <button class="btn">Dropping Point - Bagura</button>
+                            <button class="btn">Est. Time - 11 hours</button>
                         </div>
                     </div>
                 </div>
                 <img src="images/info-devider.png" alt="">
-                <div>
+                <div class="flex flex-col text-center">
                     <img src="images/fare.png" alt="">
-                    <h1>550 Taka</h1>
-                    <p>Per Seat</p>
+                    <h1 class="font-bold text-4xl">550 Taka</h1>
+                    <p class="font-semibold text-2xl">Per Seat</p>
                 </div>
             </div>
             <div class="flex bg-white mt-7 gap-5">
-                <div class="w-1/2">
-                    <p>Select Your Seat</p>
+                <div class="w-1/2 p-8">
+                    <p class="font-semibold text-2xl">Select Your Seat</p>
                     <hr>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between py-4">
                         <div class="flex">
                             <img src="images/seat-gray.png" alt="">
-                            <p>Available</p>
+                            <p class="text-lg font-medium">Available</p>
                         </div>
                         <div class="flex">
                             <img src="images/seat-green-filled.png" alt="">
-                            <p>Selected</p>
+                            <p class="text-lg font-medium">Selected</p>
                         </div>
                     </div>
                     <hr>
-                    <div class="flex justify-end">
-                        <button class="btn btn-active"><svg width="26.000000" height="26.000000" viewBox="0 0 26 26"
-                                fill="none" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                    Created with Pixso.
-                                </desc>
-                                <defs />
-                                <path id="Vector"
-                                    d="M1.91 17.59C2.51 19.04 3.4 20.37 4.51 21.48C5.62 22.59 6.95 23.48 8.4 24.08C9.86 24.68 11.42 25 13 25C14.57 25 16.13 24.68 17.59 24.08C19.04 23.48 20.37 22.59 21.48 21.48C22.59 20.37 23.48 19.04 24.08 17.59C24.68 16.13 25 14.57 25 13C25 11.42 24.68 9.86 24.08 8.4C23.48 6.95 22.59 5.62 21.48 4.51C20.37 3.4 19.04 2.51 17.59 1.91C16.13 1.31 14.57 1 13 1C11.42 1 9.86 1.31 8.4 1.91C6.95 2.51 5.62 3.4 4.51 4.51C3.4 5.62 2.51 6.95 1.91 8.4C1.31 9.86 1 11.42 1 13C1 14.57 1.31 16.13 1.91 17.59ZM11.11 14.88C11.61 15.38 12.29 15.66 13 15.66C13.7 15.66 14.38 15.38 14.88 14.88C15.38 14.38 15.66 13.7 15.66 13C15.66 12.29 15.38 11.61 14.88 11.11C14.38 10.61 13.7 10.33 13 10.33C12.29 10.33 11.61 10.61 11.11 11.11C10.61 11.61 10.33 12.29 10.33 13C10.33 13.7 10.61 14.38 11.11 14.88ZM13 15.66L13 25M10.33 13L1.33 10.33M15.66 13L24.66 10.33"
-                                    stroke="#030712" stroke-opacity="0.700000" stroke-width="2.000000"
-                                    stroke-linejoin="round" stroke-linecap="round" />
-                            </svg>
-                        </button>
+                    <div class="flex justify-between w-full bus-tickets my-6">
+                        <div class="grid grid-cols-[13px_1fr_1fr] gap-8 ">
+
+                        </div>
+                        <div class="grid grid-cols-2 gap-8">
+                            <div>
+
+                            </div>
+                            <button class="btn btn-active"><svg width="26.000000" height="26.000000" viewBox="0 0 26 26"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <desc>
+                                        Created with Pixso.
+                                    </desc>
+                                    <defs />
+                                    <path id="Vector"
+                                        d="M1.91 17.59C2.51 19.04 3.4 20.37 4.51 21.48C5.62 22.59 6.95 23.48 8.4 24.08C9.86 24.68 11.42 25 13 25C14.57 25 16.13 24.68 17.59 24.08C19.04 23.48 20.37 22.59 21.48 21.48C22.59 20.37 23.48 19.04 24.08 17.59C24.68 16.13 25 14.57 25 13C25 11.42 24.68 9.86 24.08 8.4C23.48 6.95 22.59 5.62 21.48 4.51C20.37 3.4 19.04 2.51 17.59 1.91C16.13 1.31 14.57 1 13 1C11.42 1 9.86 1.31 8.4 1.91C6.95 2.51 5.62 3.4 4.51 4.51C3.4 5.62 2.51 6.95 1.91 8.4C1.31 9.86 1 11.42 1 13C1 14.57 1.31 16.13 1.91 17.59ZM11.11 14.88C11.61 15.38 12.29 15.66 13 15.66C13.7 15.66 14.38 15.38 14.88 14.88C15.38 14.38 15.66 13.7 15.66 13C15.66 12.29 15.38 11.61 14.88 11.11C14.38 10.61 13.7 10.33 13 10.33C12.29 10.33 11.61 10.61 11.11 11.11C10.61 11.61 10.33 12.29 10.33 13C10.33 13.7 10.61 14.38 11.11 14.88ZM13 15.66L13 25M10.33 13L1.33 10.33M15.66 13L24.66 10.33"
+                                        stroke="#030712" stroke-opacity="0.700000" stroke-width="2.000000"
+                                        stroke-linejoin="round" stroke-linecap="round" />
+                                </svg>
+                            </button>
+
+                        </div>
+
 
                     </div>
-                    <div class="flex justify-between w-full bus-tickets">
+                    <div id="scrollDestination" class="flex justify-between w-full bus-tickets ">
                         <div class="grid grid-cols-[13px_1fr_1fr] gap-8 ">
-                            <p>1</p>
+                            <p>A</p>
                             <button id="0" class="btn">A1</button>
                             <button id="1" class="btn">A2</button>
-                            <p>2</p>
+                            <p>B</p>
                             <button id="2" class="btn">B1</button>
                             <button id="3" class="btn">B2</button>
-                            <p>3</p>
+                            <p>C</p>
                             <button id="4" class="btn">C1</button>
                             <button id="5" class="btn">C2</button>
-                            <p>4</p>
+                            <p>D</p>
                             <button id="6" class="btn">D1</button>
                             <button id="7" class="btn">D2</button>
-                            <p>5</p>
+                            <p>E</p>
                             <button id="8" class="btn">E1</button>
                             <button id="9" class="btn">E2</button>
-                            <p>1</p>
+                            <p>F</p>
                             <button id="10" class="btn">F1</button>
                             <button id="11" class="btn">F2</button>
-                            <p>2</p>
+                            <p>G</p>
                             <button id="12" class="btn">G1</button>
                             <button id="13" class="btn">G2</button>
-                            <p>3</p>
+                            <p>H</p>
                             <button id="14" class="btn">H1</button>
                             <button id="15" class="btn">H2</button>
-                            <p>4</p>
+                            <p>I</p>
                             <button id="16" class="btn">I1</button>
                             <button id="17" class="btn">I2</button>
-                            <p>5</p>
+                            <p>J</p>
                             <button id="18" class="btn">J1</button>
                             <button id="19" class="btn">J2</button>
 
@@ -324,13 +343,14 @@
                 </div>
                 <hr>
                 <div class="w-1/2 ">
-                    <p>Select Your Seat</p>
+                    <p class="font-semibold text-2xl">Select Your Seat</p>
                     <hr>
-                    <div class="bg-route-ticket">
+                    <div class="bg-route-ticket p-8">
                         <div class="flex justify-between">
-                            <p>seat <sup id="seatSup">0</sup> </p>
-                            <p>class</p>
-                            <p>price</p>
+                            <p class="font-medium text-base">Seat <sup id="seatSup"
+                                    class="bg-custom-green rounded-xl text-white p-1">0</sup> </p>
+                            <p class="font-medium text-base">Class</p>
+                            <p class="font-medium text-base">Price</p>
                         </div>
                         <hr>
                         <div id="add-tickets" class="">
@@ -343,8 +363,9 @@
                         </div>
                         <div class="">
                             <label class="input input-bordered flex items-center gap-2 h-14">
-                                <input type="text" class="grow" placeholder="Search" />
-                                <button class="bg-green-500 rounded h-10 px-4 py-2">Optional</button>
+                                <input type="text" class="grow" placeholder="Search" id="apply-box" />
+                                <button id="apply-btn" class="bg-route-ticket rounded h-10 px-4 py-2 text-black"
+                                    disabled>Apply</button>
                             </label>
                         </div>
                         <div class="flex justify-between">
@@ -355,26 +376,29 @@
                     <div>
                         <label class="form-control w-full">
                             <div class="label">
-                                <span class="label-text">What is your name?</span>
+                                <span class="label-text font-semibold text-base">Passenger name</span>
                             </div>
                             <input type="text" placeholder="Type here" class="input input-bordered w-full" />
 
                         </label>
                         <label class="form-control w-full">
                             <div class="label">
-                                <span class="label-text">What is your name?</span>
+                                <span class="label-text font-semibold text-base">Phone Number*</span>
                             </div>
-                            <input type="text" placeholder="Type here" class="input input-bordered w-full" />
-
+                            <input id="phone-number" type="text" placeholder="Type here"
+                                class="input input-bordered w-full " />
+                            <div class="label hidden">
+                                <span class="label-text-alt">Bottom Left label</span>
+                            </div>
                         </label>
                         <label class="form-control w-full">
                             <div class="label">
-                                <span class="label-text">What is your name?</span>
+                                <span class="label-text font-semibold text-base">Email ID</span>
                             </div>
                             <input type="text" placeholder="Type here" class="input input-bordered w-full" />
 
                         </label>
-                        <button class="btn btn-success  w-full">Success</button>
+                        <button id="next-btn" class="btn bg-custom-green mt-6 w-full " disabled>Next</button>
                         <div class="flex justify-around">
                             <u>Terms and Conditions</u>
                             <u>Cancellation Policy</u>
@@ -390,13 +414,35 @@
 
     </main>
 
-    <footer class="footer p-10 bg-neutral text-neutral-content">
-        <aside>
-            <p>ACME Industries Ltd.<br>Providing reliable tech since 1992</p>
-        </aside>
-        <nav>
-            <h6 class="footer-title">Social</h6>
-        </nav>
+    <footer class="p-10 bg-neutral text-neutral-content">
+        <div class="flex justify-between">
+            <p class="font-extrabold text-4xl">P-Ticket</p>
+            <p>Download Our App</p>
+        </div>
+        <div class="flex justify-between">
+            <p>Bus journey is fun, take a ride with us to destination</p>
+            <div class="flex">
+                <img src="images/playstore.png" alt="">
+                <div>
+                    <p>Get it on</p>
+                    <p>Google Play</p>
+                </div>
+
+            </div>
+
+
+        </div>
+        <hr>
+        <div class="flex justify-between">
+            <p class="">@all rights reserved, P-Ticket services limited.2024</p>
+            <div class="flex gap-8 ">
+                <p>Terms & condition</p>
+                <p>Return & refund policy</p>
+                <p>Privacy policy</p>
+
+            </div>
+        </div>
+
     </footer>
 
 
