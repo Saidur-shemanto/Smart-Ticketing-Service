@@ -7,6 +7,7 @@ const clickTickets = () => {
 
     if (count < 4) {
         tickBtnId.style.backgroundColor = "green";
+        tickBtnId.style.color = "white";
         count++
         const ticketNumber = document.getElementById("seat-number")
         const seatNumber = parseInt(ticketNumber.innerText) - 1
